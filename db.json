@@ -1,5 +1,5 @@
 {
-  "movie": [
+  "movies": [
     {
       "popularity": 565.278,
       "vote_count": 198,
@@ -49,7 +49,7 @@
       "release_date": "2018-09-28"
     }
   ],
-  "cast": [
+  "casts": [
     {
       "cast_id": 4,
       "character": "Jean Grey / Dark Phoenix",
