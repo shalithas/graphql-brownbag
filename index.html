@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>GraphQL Test</title>
+    </head>
+
+    <body>
+        <div id="container">
+
+        </div>
+
+        <script>
+            const getMovieQuery = (id) => `{ movie(id: ${id}){ 
+                    title
+                    overview
+                    cast{
+                        name
+                        character
+                    }
+                } 
+            }`;
+
+            const renderMovie = (res) => {
+                const { movie } = res.data;
+
+                const container = document.getElementById("container");
+                container.innerHTML = `
+                    <h3>Title: ${movie.title}</h3>
+                    <p>Overview: ${movie.overview}</p>
+                    <p>Cast</p>
+                `;
+                const castList = document.createElement('ul');
+                movie.cast.forEach(cast => {
+                    const element = document.createElement('li');
+                    element.innerText = `${cast.name} as ${cast.character}`;
+                    castList.appendChild(element);
+                });
+                container.appendChild(castList);
+            } 
+            
+            const loadMovie = (id) => {
+                const options = {
+                    method: "post",
+                    headers: {
+                    "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({
+                        query: getMovieQuery(id)
+                    })
+                };
+
+                fetch(`http://localhost:4000/graphql`, options)
+                    .then(res => res.json())
+                    .then(renderMovie);
+            }
+
+            loadMovie(320288);
+        </script>
+    </body>
+</html>
