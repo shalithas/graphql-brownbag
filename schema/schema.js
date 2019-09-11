@@ -4,7 +4,8 @@ const {
   GraphQLInt,
   GraphQLString,
   GraphQLSchema,
-  GraphQLList
+  GraphQLList,
+  GraphQLNonNull
 } = graphql;
 const Axios = require("axios");
 
@@ -51,14 +52,14 @@ const CastType = new GraphQLObjectType({
 const RootQuery = new GraphQLObjectType({
   name: "RootQueryType",
   fields: {
-    movies: {
+    movie: {
       type: MovieType,
       args: { id: { type: GraphQLInt } },
       resolve(parentValue, args = null) {
         return Axios.get(`${url}/movies/${args.id}`).then(res => res.data);
       }
     },
-    casts: {
+    cast: {
       type: CastType,
       args: { id: { type: GraphQLInt } },
       resolve(parentValue, args = null) {
@@ -68,6 +69,48 @@ const RootQuery = new GraphQLObjectType({
   }
 });
 
+const mutation = new GraphQLObjectType({
+  name: "Mutation",
+  fields: {
+    addMovie: {
+      type: MovieType,
+      args: {
+        id: { type: GraphQLNonNull(GraphQLInt) },
+        title: { type: GraphQLNonNull(GraphQLString) },
+        overview: { type: GraphQLString }
+      },
+      resolve(parentValue, { id, title, overview }) {
+        return Axios.post(`${url}/movies`, { id, title, overview }).then(
+          res => res.data
+        );
+      }
+    },
+    deleteMovie: {
+      type: MovieType,
+      args: {
+        id: { type: GraphQLNonNull(GraphQLInt) }
+      },
+      resolve(parentValue, { id }) {
+        return Axios.delete(`${url}/movies/${id}`).then(res => res.data);
+      }
+    },
+    updateMovie: {
+      type: MovieType,
+      args: {
+        id: { type: GraphQLNonNull(GraphQLInt) },
+        title: { type: GraphQLNonNull(GraphQLString) },
+        overview: { type: GraphQLString }
+      },
+      resolve(parentValue, { id, title, overview }) {
+        return Axios.put(`${url}/movies/${id}`, { title, overview }).then(
+          res => res.data
+        );
+      }
+    }
+  }
+});
+
 module.exports = new GraphQLSchema({
-  query: RootQuery
+  query: RootQuery,
+  mutation
 });
