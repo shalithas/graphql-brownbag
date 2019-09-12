@@ -25,3 +25,7 @@ head over to [https://git-scm.com/downloads](https://git-scm.com/downloads) to d
     git clone git@github.com:shalithas/graphql-brownbag.git movie-app
     cd movie-app
     npm install
+    
+### Code editor
+
+Any text editor like Notepad++, Sublime Text, Atom or Preferably [Visual Studio Code)[https://code.visualstudio.com/Download].
