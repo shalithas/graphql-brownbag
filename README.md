@@ -28,4 +28,4 @@ head over to [https://git-scm.com/downloads](https://git-scm.com/downloads) to d
     
 ### Code editor
 
-Any text editor like Notepad++, Sublime Text, Atom or Preferably [Visual Studio Code)[https://code.visualstudio.com/Download].
+Any text editor like Notepad++, Sublime Text, Atom or Preferably [Visual Studio Code](https://code.visualstudio.com/Download).
