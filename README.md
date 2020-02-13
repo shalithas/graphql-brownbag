@@ -8,13 +8,9 @@ Please make sure you have installed the following items before joining the BB so
 
 head over to [https://nodejs.org/en/download/](https://nodejs.org/en/download/) to download install node
 
-### Install nodemon
-
-    npm install nodemon -g
-
 ### Install json-server
 
-    npm install json-server -g
+    npm install json-graphql-server -g
 
 ### Install GIT if you don't have it on your machine
 
