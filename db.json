@@ -53,167 +53,152 @@
     {
       "cast_id": 4,
       "character": "Jean Grey / Dark Phoenix",
-      "credit_id": "589f3c3bc3a3684bc4010578",
       "gender": 1,
       "id": 1001657,
       "name": "Sophie Turner",
       "order": 0,
       "profile_path": "/kZWYgD1T7ReZTt0al5gfkoviXG7.jpg",
-      "movieId": 320288
+      "movie_id": 320288
     },
     {
       "cast_id": 3,
       "character": "Charles Xavier / Professor X",
-      "credit_id": "589f3c2e925141172101014a",
       "gender": 2,
       "id": 5530,
       "name": "James McAvoy",
       "order": 1,
       "profile_path": "/oPIfGm3mf4lbmO5pWwMvfTt5BM1.jpg",
-      "movieId": 320288
+      "movie_id": 320288
     },
     {
       "cast_id": 7,
       "character": "Erik Lensherr / Magneto",
-      "credit_id": "59353a229251417e03033bba",
       "gender": 2,
       "id": 17288,
       "name": "Michael Fassbender",
       "order": 2,
       "profile_path": "/oexNPLumoFpazzzUqzBSDDYiUg1.jpg",
-      "movieId": 320288
+      "movie_id": 320288
     },
     {
       "cast_id": 10,
       "character": "Raven Darkholme / Mystique",
-      "credit_id": "594182eac3a368517f01b188",
       "gender": 1,
       "id": 72129,
       "name": "Jennifer Lawrence",
       "order": 3,
       "profile_path": "/hvMB8ItfetI8baJJ15XgI4gITqf.jpg",
-      "movieId": 320288
+      "movie_id": 320288
     },
     {
       "cast_id": 9,
       "character": "Vuk",
-      "credit_id": "59417953c3a36803b4025497",
       "gender": 1,
       "id": 83002,
       "name": "Jessica Chastain",
       "order": 4,
       "profile_path": "/lodMzLKSdrPcBry6TdoDsMN3Vge.jpg",
-      "movieId": 320288
+      "movie_id": 320288
     },
     {
       "cast_id": 24,
       "character": "Bill Denbrough",
-      "credit_id": "5acfcb829251417b72001543",
       "gender": 2,
       "id": 5530,
       "name": "James McAvoy",
       "order": 0,
       "profile_path": "/oPIfGm3mf4lbmO5pWwMvfTt5BM1.jpg",
-      "movieId": 474350
+      "movie_id": 474350
     },
     {
       "cast_id": 23,
       "character": "Beverly Marsh",
-      "credit_id": "5a8cef419251416480001c7f",
       "gender": 1,
       "id": 83002,
       "name": "Jessica Chastain",
       "order": 1,
       "profile_path": "/lodMzLKSdrPcBry6TdoDsMN3Vge.jpg",
-      "movieId": 474350
+      "movie_id": 474350
     },
     {
       "cast_id": 25,
       "character": "Richie Tozier",
-      "credit_id": "5acfcba59251417b600014bc",
       "gender": 2,
       "id": 19278,
       "name": "Bill Hader",
       "order": 2,
       "profile_path": "/3Z5JsyLw7YTLZgpA3FAlLmFSN9F.jpg",
-      "movieId": 474350
+      "movie_id": 474350
     },
     {
       "cast_id": 29,
       "character": "Eddie Kaspbrak",
-      "credit_id": "5afc6c780e0a260d4200015c",
       "gender": 2,
       "id": 5296,
       "name": "James Ransone",
       "order": 3,
       "profile_path": "/9j39UVIex7nIAOMaNqo0w9yJpSG.jpg",
-      "movieId": 474350
+      "movie_id": 474350
     },
     {
       "cast_id": 31,
       "character": "Ben Hanscom",
-      "credit_id": "5b05b2da9251410d940018ab",
       "gender": 2,
       "id": 223901,
       "name": "Jay Ryan",
       "order": 4,
       "profile_path": "/zMaGHqanBabmtj3GZcyFVOlcbLF.jpg",
-      "movieId": 474350
+      "movie_id": 474350
     },
     {
       "cast_id": 1,
       "character": "Forrest Tucker",
-      "credit_id": "58474fc092514119b30027cc",
       "gender": 2,
       "id": 4135,
       "name": "Robert Redford",
       "order": 0,
       "profile_path": "/yOwYh9R4LFulxWb1GdwO7Z1mjLe.jpg",
-      "movieId": 429203
+      "movie_id": 429203
     },
     {
       "cast_id": 3,
       "character": "Jewel",
-      "credit_id": "58474fcdc3a36814280025e9",
       "gender": 1,
       "id": 5606,
       "name": "Sissy Spacek",
       "order": 1,
       "profile_path": "/xAxenjxjLNQFq4v1ccS2to3Mnoq.jpg",
-      "movieId": 429203
+      "movie_id": 429203
     },
     {
       "cast_id": 2,
       "character": "John Hunt",
-      "credit_id": "58474fc6c3a368141a0028aa",
       "gender": 2,
       "id": 1893,
       "name": "Casey Affleck",
       "order": 2,
       "profile_path": "/kPNMpiZHsAzeQar4DiNsrekwHBU.jpg",
-      "movieId": 429203
+      "movie_id": 429203
     },
     {
       "cast_id": 4,
       "character": "Teddy",
-      "credit_id": "58d4254b9251411f900193cb",
       "gender": 2,
       "id": 2047,
       "name": "Danny Glover",
       "order": 3,
       "profile_path": "/jSNTEnm0Sxm8FRtoBfJmhmQyozH.jpg",
-      "movieId": 429203
+      "movie_id": 429203
     },
     {
       "cast_id": 7,
       "character": "Waller",
-      "credit_id": "58eefc0792514142070033ce",
       "gender": 2,
       "id": 2887,
       "name": "Tom Waits",
       "order": 4,
       "profile_path": "/dnot1ccAdk15BAFtrpW07UTPpWu.jpg",
-      "movieId": 429203
+      "movie_id": 429203
     }
   ]
 }
