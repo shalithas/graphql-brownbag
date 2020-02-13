@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>GraphQL Demo</title>
+    </head>
+    <body>
+        <div id="container"></div>
+        <script>
+            const loadMovies = async () => {
+                let res = await fetch(`http://localhost:3000`, {
+                    method: 'post',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        query: `
+                        {
+                            allMovies(
+                                perPage: 1
+                                page: 0
+                            ){
+                                title
+                                release_date
+                                vote_count
+                                overview
+                                Casts{
+                                    name
+                                    character
+                                }
+                            }
+                        }`
+                    })
+                });
+                res = await res.json();
+                if(res.data){
+                    const { allMovies } = res.data;
+                    allMovies.forEach(renderMovie);
+                } else {
+                    const {errors} = res;
+                    throw new Error(errors.pop().message);
+                }
+                
+            }
+
+            const container = document.getElementById('container');
+            const renderMovie = movie => {
+
+                let castList = '';
+                movie.Casts.forEach( cast => {
+                    castList += renderCastMember(cast);
+                })
+
+                container.innerHTML += `
+                    <div>
+                        <h1>${movie.title}</h1>
+                        <p>Released on: ${movie.release_date}</p>
+                        <p>${movie.overview}</p>
+                        <h3>Cast Members</h3>
+                        <ul>${castList}</ul>
+                        <hr />
+                    </div>
+                `;
+                
+            }
+
+            const renderCastMember = cast => {
+                return `<li>${cast.character} - ${cast.name}</li>`;
+            }
+
+            loadMovies();
+        </script>
+    </body>
+</html>
